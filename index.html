@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paleta Security</title>
+  <meta name="description" content="Practical OT security tooling and reproducible lab environments." />
+
+  <style>
+    :root{
+      --bg: #0e1117;
+      --fg: #e6edf3;
+      --muted: #9da7b3;
+      --border: #30363d;
+      --link: #58a6ff;
+      --card: rgba(255,255,255,0.02);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 70px auto;
+      padding: 0 22px;
+    }
+
+    .toprow{
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    /* Put your logo file in the same folder as index.html and name it "logo.png" */
+    .logo {
+      height: 68px;
+      width: 68px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: #ffffff;     /* makes the logo look intentional even if the PNG has white edges */
+      padding: 6px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+      flex: 0 0 auto;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.01);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: -0.02em;
+    }
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      background: var(--card);
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 520px){
+      .toprow { align-items: flex-start; }
+      .logo { height: 56px; width: 56px; }
+      h1 { font-size: 34px; }
+      .wrap { margin: 50px auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="toprow">
+      <!-- Rename your image to logo.png (recommended). If you keep paletas.png, change src accordingly. -->
+      <img src="paletas.png" alt="Paleta Security Logo" class="logo" />
+
+      <div>
+        <h1>Paleta Security</h1>
+        <p class="sub">Practical OT security tooling and open lab environments.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>OTMap</strong> — OT Asset Mapping and Reporting</li>
+        <li><strong>Paleta Box</strong> — OT environments for Practice</li>
+      </ul>
+
+      <p style="margin: 14px 0 0;">
+        GitHub org: <a href="https://github.com/paletasecurity">github.com/paletasecurity</a>
+      </p>
+    </div>
+
+    <div class="footer">
+       Built by <strong>Paleteros</strong>. 🍧
+         <br>
+  Contact: <a href="mailto:paletero@paletasecurity.com">paletero@paletasecurity.com</a>
+    </div>
+  </div>
+</body>
+</html>
